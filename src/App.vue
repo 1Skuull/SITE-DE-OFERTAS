@@ -12,9 +12,8 @@ import Header from "./layout/Header.vue"
 
 <style scoped>
 main{
-  margin: 0 auto;
+  margin: 30px auto;
   width: 1080px;
-  margin-top: 30px;
 }
 
 </style>

@@ -2,7 +2,7 @@
   font-family: Cascadia Code;
 
   color: #0e0e0ede;
-  background-color: #dadadade;
+  background-color: white;
 }
 *{
   margin: 0;
@@ -15,4 +15,8 @@ a{
 }
 a:hover{
   color: crimson;
+}
+
+input:focus{
+  outline: none;
 }

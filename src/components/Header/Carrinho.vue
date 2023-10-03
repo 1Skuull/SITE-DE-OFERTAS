@@ -11,4 +11,8 @@
     margin-right: 15px;
     text-align: center;
 }
+img{
+    width: 35px;
+    height: 30px;
+}
 </style>

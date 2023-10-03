@@ -6,7 +6,7 @@ import Pagamento from "./pages/pagamento.vue"
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/oferta', component: Ofertas },
+  { path: '/oferta/:id', component: Ofertas },
   { path: '/pagamento', component: Pagamento },
 ]
 
