@@ -2,6 +2,6 @@
     <Cards title="Hoteis" />
 </template>
 <script setup>
-import Cards from '../components/Home/Cards.vue';
+import Cards from '../components/Cards.vue';
 
 </script>

@@ -1,12 +1,12 @@
 <script setup>
-import Carrinho from '../components/Header/Carrinho.vue';
+import Carrinho from '../components/Carrinho.vue';
 import Logo from '../components/Header/Logo.vue';
 
 </script>
 <template>
     <header>
         <Logo />
-        <h3>Barato coletivo</h3>
+        <!-- <h3>Barato coletivo</h3> -->
         <Carrinho />
     </header>
 </template>
@@ -19,6 +19,7 @@ header{
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 5px;
 
   /* -webkit-box-shadow: -4px 15px 88px -15px rgba(0,0,0,0.4);
