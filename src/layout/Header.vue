@@ -12,9 +12,9 @@ import Logo from '../components/Header/Logo.vue';
 </template>
 <style scoped>
 header{
-  margin: 15px auto;
+  margin: 5px auto;
   max-width: 1080px;
-  border: 2px solid #b3b3b3de;
+  border: 2px solid #838383de;
   border-radius: 5px;
   height: 60px;
   display: flex;

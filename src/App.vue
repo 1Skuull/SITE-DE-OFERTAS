@@ -1,5 +1,6 @@
 <script setup>
 import Header from "./layout/Header.vue"
+import Footer from "./components/Footer/index.vue"
 
 </script>
 
@@ -8,12 +9,14 @@ import Header from "./layout/Header.vue"
   <main>
     <RouterView ></RouterView>
   </main>
+  <Footer />
 </template>
 
 <style scoped>
 main{
-  margin: 30px auto;
-  width: 1080px;
+  margin: 0 auto;
+  max-width: 1080px;
+  min-height: 843px;
 }
 
 </style>

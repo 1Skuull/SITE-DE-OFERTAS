@@ -1,8 +1,8 @@
 <template>
-    <h1>{{ props.title }}</h1>
+    <h1 class="title-cards">{{ props.title }}</h1>
     <div class="container-cards">
         <div v-for="produto in stores.produtos" class="cards" :key="produto.id">
-            <img class="img-produto" :src="produto.img" :alt="produto.title">
+            <img class="img-produto" src="" alt="">
             <h2 class="title-produto">{{ produto.title }}</h2>
             <p class="descricao-produto">{{ produto.descricao }}</p>
             <p class="preco-produto">{{ produto.preco }}</p>
@@ -17,7 +17,7 @@
     </div>
 </template>
 <script setup>
-import { ref, defineProps } from 'vue';
+import { defineProps } from 'vue';
 import { useRouter } from 'vue-router';
 import { useCarrinhoStore }  from "../stores/Carrinho.js"
 
@@ -37,15 +37,19 @@ const props = defineProps({
 const route = useRouter()
 
 function params(id){
-    route.push(`/oferta/${id}`)
+    route.push(`/produto/${id}`)
 }
 
 </script>
 <style scoped>
 
+.title-cards{
+    margin-bottom: 5px;
+}
+
 .container-cards{
     /* background-color: black; */
-    height: 500px;
+    height: 400px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -63,7 +67,7 @@ function params(id){
 }
 
 .img-produto{
-    border: 2px solid #b3b3b3de;
+    border: 2px solid black;
     min-height: 190px;
     border-radius: 5px;
     width: 100%;
@@ -104,8 +108,9 @@ function params(id){
 
 .buttao-comprar-produto:hover{
     background-color: white;
+    border: 2px solid black;
     color: black;
-    box-shadow: -15px 15px 88px -15px rgba(0, 0, 0, 1);
+    /* box-shadow: -15px 15px 88px -15px rgba(0, 0, 0, 1); */
 }
 .buttao-carrinho{
     min-width: 50px;

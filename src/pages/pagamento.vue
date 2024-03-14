@@ -16,5 +16,4 @@ import Resumo from "../components/Pagamento/Resumo.vue"
     grid-template-columns: 60% 40%;
 }
 
-
 </style>
